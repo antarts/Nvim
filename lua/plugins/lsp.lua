@@ -11,7 +11,7 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
-    "lua_ls",
+    "lua_ls", "jedi_language_server", "pyre", "html", "cssls", "quick_lint_js", "marksman", "ruby_ls",
   }
 })
 

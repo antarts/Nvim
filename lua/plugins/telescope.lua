@@ -29,8 +29,8 @@ require 'telescope'.setup {
           move = true, -- move to next/prev file
         },
       },
-      on_confirm_single = canned.single.cope_path,
-      on_confirm_multiple = canned.multiple.bulk_copy,
+      -- on_confirm_single = canned.single.cope_path,
+      -- on_confirm_multiple = canned.multiple.bulk_copy,
       cache_path = vim.fn.stdpath("cache") .. "/media",
     }
   }

@@ -72,7 +72,6 @@ return require('packer').startup(function(use)
   -- 图片预览
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
   use 'dharmx/telescope-media.nvim'
 
@@ -82,6 +81,7 @@ return require('packer').startup(function(use)
     requires = {
         'nvim-lua/plenary.nvim',
         'hrsh7th/nvim-cmp',
+        'onsails/lspkind.nvim',
     },
   }
 

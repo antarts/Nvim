@@ -22,6 +22,16 @@ cmp.setup({
       require('luasnip').lsp_expand(args.body)
     end,
   },
+  formatting = {
+    format = require('lspkind').cmp_format({
+      mode = 'symbol',
+      maxwidth = 50,
+      ellipsis_char = '...',
+      symbol_map = {
+        Codeium = "",
+      }
+    })
+  },
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -66,5 +76,6 @@ cmp.setup({
     { name = 'path' },
   }, {
     { name = 'buffer' },
+    { name = 'codeium' },
   })
 })
