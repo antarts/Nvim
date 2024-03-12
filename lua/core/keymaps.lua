@@ -13,6 +13,8 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- 窗口
 keymap.set("n", "sv", "<C-w>v") -- 水平
 keymap.set("n", "sh", "<C-w>s") -- 垂直
+keymap.set("n", "sc", "<C-w>c") -- 关闭当前窗口
+keymap.set("n", "so", "<C-w>o") -- 关闭其他窗口
 
 -- 取消高亮
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -23,6 +25,9 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- 切换buffer
 keymap.set("n", "<S-l>", ":bnext<CR>") 
 keymap.set("n", "<S-h>", ":bprevious<CR>") 
+
+-- yazi 文件浏览器
+keymap.set("n", "<leader>gy", ":Yazi<CR>")
 
 -- ---------- AI ------------ --
 -- Change '<C-g>' here to any keycode you like.

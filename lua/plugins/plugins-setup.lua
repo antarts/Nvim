@@ -85,6 +85,15 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- terminal file browser
+  use {
+    'DreamMaoMao/yazi.nvim',
+    requires = {
+      'nvim-telescope/telescope.nvim',
+      'nvim-lua/plenary.nvim',
+    },
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
